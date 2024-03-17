@@ -1,0 +1,562 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.main {
+    width: 1200px;
+    margin: 70px auto;
+    /* border: 1px solid black; */
+}
+
+.song-intro {
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.song-intro .song-info {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+}
+
+.song-title {
+    float: left;
+    margin-left: 30px;
+}
+
+.song-intro .song-info .song-title a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.song-intro .song-info .song-play-num {
+    float: right;
+    line-height: 70px;
+    font-size: 14px;
+    margin-right: 50px;
+    color: #a1a1a1;
+}
+
+.song-intro .song-info .song-play-num span {
+    color: #109d59;
+    margin-right: 5px;
+}
+
+.song-intro .song-details {
+    width: 100%;
+    height: 340px;
+    background: url("../images/song-background_03.png") no-repeat center center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.song-intro .song-details img {
+    float: left;
+    width: 260px;
+    height: 260px;
+    border-radius: 5px;
+}
+
+.song-intro .song-details .song-details-content {
+    float: left;
+    margin-left: 20px;
+    width: 840px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.song-intro .song-control {
+    width: 100%;
+    height: 56px;
+}
+
+.song-intro .song-control .control .button a {
+    margin: 15px 20px 0 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e5;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+    float: left;
+}
+
+.song-intro .song-control .control .button a img {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.song-control .control-util p {
+    float: left;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.song-control .control-util .progress-bar {
+    width: 910px;
+    height: 8px;
+    background-color: #d3ede9;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 33px;
+    float: left;
+}
+
+.control-util .progress-bar .progress-bar-passed {
+    float: left;
+    width: 0%;
+    height: 8px;
+    background-color: #109d59;
+    border-radius: 20px;
+}
+
+/* article section */
+.main article {
+    width: 100%;
+    background-color: #f5f5f5;
+    clear: both;
+    overflow: hidden;
+}
+
+.main .article {
+    float: left;
+    width: 810px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.article .article-title {
+    border-bottom: 1px solid #e0e0e0;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.article .article-title h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.article .article-title .article-title-info {
+    line-height: 54px;
+}
+
+.article-title-info .view {
+    float: left;
+}
+
+.article-title-info .view span {
+    float: left;
+    margin-right: 43px;
+    text-indent: 23px;
+    color: #999;
+    position: relative;
+}
+
+.article-title-info .view .view-num::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../images/eye_03.png") no-repeat center center;
+}
+
+.article-title-info .view .wechat-num::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../images/gray-wechat.png") no-repeat center center;
+}
+
+.article-title-info .create-time {
+    float: right;
+    color: #999;
+}
+
+.article .article-content .blog {
+    width: 100%;
+}
+
+.blog .blog-details-label {
+    margin-top: 20px;
+    position: relative;
+    border-top: 1px solid #ded7d7;
+    padding: 10px 0 0 20px;
+}
+
+.blog .blog-details-label::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    background: url("../images/labelIcon_03.png") no-repeat center center;
+}
+
+.blog-details-label .label {
+    color: white;
+    display: inline-block;
+    background: #999;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.blog .blog-details-footer {
+    width: 100%;
+    height: 170px;
+    text-align: center;
+}
+
+.blog .blog-details-footer img {
+    width: 56px;
+    height: 84px;
+    margin-top: 40px;
+}
+
+/* related readings */
+.related-reading {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+.related-read-title {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.related-read-title a {
+    color: #4d4d4d;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.related-read-content {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.related-read-content .related-read-content-item {
+    width: 400px;
+    height: 170px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.related-read-content .related-read-content-item:nth-child(odd) {
+    margin-right: 10px;
+}
+
+.related-read-content .related-read-content-item .related-read-summary {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.related-read-share {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 5px;
+}
+
+.related-read-share .share-left {
+    float: left;
+}
+
+.related-read-share .share-left span {
+    line-height: 30px;
+    color: #999;
+}
+
+.related-read-share .share-right {
+    float: right;
+    position: relative;
+}
+
+.related-read-share .share-right a {
+    display: inline-block;
+    border: 1px solid #9da09e;
+    padding: 7px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    color: #999;
+}
+
+.related-read-share .share-right a:nth-child(1) {
+    background: #e5f2f5;
+    border: 1px solid #e5f2f5;
+    color: #14abd1;
+}
+
+.related-read-share .share-right .report {
+    position: absolute;
+    bottom: -30px;
+    right: 10px;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: 0;
+}
+
+/* comment section */
+.blog-comment .like {
+    width: 100%;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.blog-comment .like h4 {
+    margin-bottom: 10px;
+    text-indent: 10px;
+    position: relative;
+}
+
+.blog-comment .like h4::before {
+    content: "";
+    width: 4px;
+    height: 35%;
+    background-color: #f68344;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
+.like-list .like-person {
+    float: left;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.like-list .like-person img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+}
+
+.like-list .like-person span {
+    line-height: 30px;
+    text-align: center;
+    display: block;
+    color: #474747;
+}
+
+.like .theme-pic {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.comment-item {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+}
+
+.comment-item .comment-user-icon {
+    float: left;
+    width: 40px;
+    height: 100%;
+    display: block;
+}
+
+.comment-item .comment-user-icon img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%
+}
+
+.comment-content {
+    float: left;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+.comment-content>b {
+    font-size: 14px;
+    padding: 0 10px;
+    color: #333;
+}
+
+.comment-content>i {
+    font-size: 12px;
+    color: #999;
+    font-style: normal;
+}
+
+.comment-content>p {
+    font-size: 14px;
+    color: #0b0b0b;
+    margin: 5px 0 0 10px;
+    line-height: 22px;
+}
+
+.comment-footer-icon {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+.comment-footer-icon .icon-1 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/gray-wechat.png") no-repeat center center;
+}
+
+.comment-footer-icon .icon-2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/listenSpeak/spriteicon.png") no-repeat center center;
+}
+
+/* article-aside */
+.article-right {
+    float: right;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.article-aside {
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.article-aside:nth-child(1) {
+    margin-top: 20px;
+}
+
+.info-up {
+    padding: 20px;
+    overflow: hidden;
+    clear: both;
+}
+
+.account-info-icon {
+    margin: 20px auto;
+    overflow: hidden;
+    clear: both
+}
+
+.account-info-icon img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+.account-info-icon h3 {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.info-up .other-info {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    height: 50px;
+    text-align: center;
+}
+
+.info-action-down {
+    height: 80px;
+    padding: 20px 50px;
+}
+
+.circle-btn.add {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: url("../images/singer/guanzhu.png") no-repeat center center;
+    position: relative;
+}
+
+.circle-btn.add::after {
+    content: "Follow";
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 12px;
+    color: #999;
+}
+
+.circle-btn.msg {
+    float: right;
+    width: 60px;
+    height: 60px;
+    background: url("../images/singer/sixin.png") no-repeat center center;
+    position: relative;
+}
+
+.circle-btn.msg::after {
+    content: "Messege";
+    display: block;
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    color: #999;
+}
+
+.other-blog,
+.hot-commend {
+    padding: 20px;
+}
+
+.other-blog-title {
+    font-size: 18px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 15px;
+}
+
+.blog-list {
+    margin-top: 15px;
+}
+
+.blog-list li a {
+    display: block;
+    width: 260px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.blog-list li a:hover {
+    color: #109d59;
+}

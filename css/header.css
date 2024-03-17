@@ -83,6 +83,7 @@ nav .inner .main-nav ul li a {
     padding: 2px 9px;
     border-radius: 3px;
     margin-right: 9px;
+    position: relative;
 }
 
 nav .inner .main-nav ul li {
