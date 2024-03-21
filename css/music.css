@@ -399,8 +399,10 @@ body {
 
 .comment-content {
     float: left;
+    display: block;
     margin-bottom: 20px;
-    vertical-align: top;
+    width: 770px;
+    /* vertical-align: top; */
 }
 
 .comment-content>b {

@@ -17,6 +17,7 @@ nav .inner .logo {
 
 nav .inner .logo img {
     float: left;
+    margin-top: 20px;
 }
 
 nav .inner .logo .logo-text {
@@ -74,6 +75,7 @@ nav .inner .main-nav .number {
     line-height: 20px;
     left: 180px;
     top: -5px;
+    z-index: 999;
 
 }
 
@@ -133,12 +135,18 @@ nav .search #search {
     color: #2ecc71;
 }
 
+.login #search:focus {
+    outline: none;
+}
+
 nav .login #search-button {
-    background-color: #2ecc71;
+    float: right;
     position: absolute;
     width: 30px;
     height: 30px;
     border-radius: 0 40px 40px 0;
+    background: url("../images/searchIcon_06.png") no-repeat center center;
+    background-color: #2ecc71;
     cursor: pointer;
     top: 30px;
     right: 125px;
