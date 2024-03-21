@@ -1,0 +1,142 @@
+.login-container {
+    width: 100%;
+    height: 800px;
+    background: url('../images/login-back_02.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.login-container form {
+    width: 300px;
+    height: 360px;
+    background-color: #666;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    margin-top: 0;
+}
+
+.login-container .login-register-select {
+    height: 50px;
+    width: 100%;
+}
+
+.login-register-select .login-reg-btn {
+    display: block;
+    width: 145px;
+    height: 40px;
+    float: left;
+    background-color: #fff;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.login-reg-btn:nth-child(1) {
+    margin-right: 10px;
+}
+
+.login-reg-btn.on {
+    background-color: #e65e42;
+    color: #fff;
+}
+
+.login-reg-btn.on::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 10px solid #e65e42;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    top: 40px;
+    left: 60px;
+}
+
+.account-info-box {
+    position: relative;
+    display: none;
+    color: white;
+}
+
+.account-info-box.on {
+    display: block;
+}
+
+.account-info-box input {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    text-indent: 10px;
+}
+
+.check-box {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#check-code-value {
+    width: 145px;
+    height: 40px;
+    margin-right: 10px;
+    border: 0;
+    text-indent: 10px;
+}
+
+.check-pic {
+    width: 145px;
+    height: 40px;
+}
+
+.check-pic img {
+    width: 100%;
+    height: 40px;
+}
+
+form .login-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #7fa900;
+    font-size: 18px;
+    text-align: center;
+}
+
+.other-login p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.other-login a img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.login-detail .forget-pwd {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+}
+
+.register-detail .check-box {
+    margin-top: 20px;
+}
+
+.register-detail #reg-btn {
+    margin-top: 10px;
+}

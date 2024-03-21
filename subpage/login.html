@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/login.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
@@ -18,7 +19,7 @@
     <nav>
         <div class="inner">
             <div class="logo">
-                <img src="./images/logo_03.png" alt="">
+                <img src="../images/logo_03.png" alt="">
                 <div class="logo-text">
                     <strong>蓝莓派</strong>
                     <h3>Share songs with Time</h3>
@@ -52,13 +53,56 @@
     <div class="login-container">
         <form action="">
             <div class="login-register-select">
-                <a href="#" class="login-reg-btn on">登录</a>
-                <a href="#" class="login-reg-btn">注册</a>
+                <a href="#" class="login-reg-btn on">Login</a>
+                <a href="#" class="login-reg-btn ">Register</a>
             </div>
 
-            <div class="account-info-box login-detail on ">
-                <input type="text" id="login-account" placeholder="enter your username">
+            <!-- login section -->
+
+            <div class="account-info-box login-detail on">
+                <label for="login-account">Username</label>
+                <input type="text" id="login-account" placeholder="enter your username" class="input">
+                <label for="pwd-account">Password</label>
+                <input type="password" class="input" id="pwd-account" placeholder="enter ur password">
+                <div class="check-box">
+                    <div class="check-input">
+                        <label for="check-code-value"></label>
+                        <input type="text" id="check-code-value" placeholder="verification-code">
+                    </div>
+                    <div class="check-pic">
+                        <img src="../images/check-code_04.png" alt="">
+                    </div>
+                </div>
+                <label for="login_btn"></label>
+                <input type="text" class="login-btn" id="login_btn" value="Login">
+                <div class="other-login">
+                    <p>Other Ways To Login</p>
+                    <a href="#"><img src="../images/qqIcon.png" alt=""></a>
+                    <a href="#"><img src="../images/weixinIcon.png" alt=""></a>
+                    <a href="#"><img src="../images/weiboIcon.png" alt=""></a>
+                </div>
+                <a href="#" class="forget-pwd">Forget Password?</a>
             </div>
+
+            <!-- register section -->
+            <div class="register-detail account-info-box">
+                <label for="reg-username">Username</label>
+                <input type="text" class="input" id="reg-username" placeholder="account name">
+                <label for="reg-password">Password</label>
+                <input type="password" class="input" id="reg-password" placeholder="password">
+                <input type="password" class="input" id="reg-password" placeholder="enter password again">
+                <div class="check-box">
+                    <div class="check-input">
+                        <label for="check-code-value"></label>
+                        <input type="text" id="check-code-value" placeholder="verification-code">
+                    </div>
+                    <div class="check-pic">
+                        <img src="../images/check-code_04.png" alt="">
+                    </div>
+                </div>
+                <input type="text" class="login-btn" id="reg-btn" value="Register">
+            </div>
+
         </form>
     </div>
 
@@ -95,11 +139,11 @@
             </div>
             <div class="link-right">
                 <div class="weibo">
-                    <img src="./images/footer-ewm1.jpg" alt="">
+                    <img src="../images/footer-ewm1.jpg" alt="">
                     <span>Weibo QR Code</span>
                 </div>
                 <div class="wechat">
-                    <img src="./images/footer-ewm2.jpg" alt="">
+                    <img src="../images/footer-ewm2.jpg" alt="">
                     <span>Wechat QR Code</span>
                 </div>
                 <div class="content">
@@ -124,6 +168,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
