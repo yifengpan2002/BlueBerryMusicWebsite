@@ -9,6 +9,57 @@ $(function () {
             })
         }())
     })
+
+    $("#login_btn").click(function () {
+        var username = $('#login-account').val()
+        var password = $('#pwd-account').val()
+        console.log(username, password)
+        if (username && password) {
+            $.ajax({
+                type: 'post',
+                url: 'http://localhost/blueberry/blueberry_server/login.php',
+                data: {
+                    username: username,
+                    password: password
+                },
+                success: function (data) {
+                    data = JSON.parse(data)
+                    // 存储到本地
+                    localStorage.setItem("username", data[0].username)
+                    if (data) {
+                        window.location.href = "../index.html"
+                    }
+                }
+            })
+        } else {
+            alert("Your haven't enter username or password")
+        }
+    })
+
+    $('#reg-btn').click(function () {
+        var username = $('#reg-username').val()
+        var password = $('#reg-password').val()
+        var password2 = $('#reg-password2').val()
+        if (username && password) {
+            $.ajax({
+                type: 'post',
+                url: 'http://localhost/blueberry/blueberry_server/register.php',
+                data: {
+                    username: username,
+                    password: password
+                },
+                success: function (data) {
+                    alert("you have successfully register ", data)
+                }
+            })
+        } else {
+            if (password !== pasword2) {
+                alert("passwords are not matching")
+            } else {
+                alert("Your haven't enter username or password")
+            }
+        }
+    })
 })
 
 // create database

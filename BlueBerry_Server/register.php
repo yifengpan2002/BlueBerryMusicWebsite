@@ -6,13 +6,12 @@
     $connnect =  mysqli_connect("localhost",'root', "", "blueberrypie");
     if($connnect){
         mysqli_query($connnect,"set names utf8");
-        $sql = "select * from user where username = '$username' and password='$password'";
+        $sql = "insert into User values (null, '$username','$password')";
         $result = mysqli_query($connnect, $sql);
         if($result -> num_rows > 0){
-            $data = mysqli_fetch_all($result,MYSQLI_ASSOC);
-            echo json_encode($data);
+            echo json_encode(array('msg' => 'successfully registered!'));
         }else{
-            echo json_encode(array('msg'=> "usernmae and password not exist"));
+            echo json_encode(array('msg'=> "failed registration"));
         }
     }else{
         echo json_encode(array("msg" => "failing in connecting with database"));

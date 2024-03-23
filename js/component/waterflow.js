@@ -86,4 +86,3 @@ function waterFlowCompoenent(url, tag) {
         }
     }
 }
-export { waterflow }

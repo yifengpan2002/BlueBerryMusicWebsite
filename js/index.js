@@ -38,7 +38,6 @@ $(function () {
         url: "http://localhost/BlueBerry/BlueBerry_Server/index_music.php",
         success: (data) => {
             data = JSON.parse(data)
-            console.log(data)
             for (var i = 0; i < data["music"].length; i++) {
                 var username = data["music"][i].username
                 var img = data["music"][i].img
@@ -76,13 +75,11 @@ $(function () {
         url: "http://localhost/blueberry/BlueBerry_Server/index_travel.php",
         success: (data) => {
             data = JSON.parse(data)
-            console.log(data)
             for (var i = 0; i < data.travelnotes.length; i++) {
                 var name = data["travelnotes"][i].note_author
                 var title = data.travelnotes[i].note_title
                 var content = data["travelnotes"][i].note_content
                 var img = data["travelnotes"][i].note_img
-                console.log(img, title)
                 $(".travel-list").append(
                     `<li class="travel-item">
                         <a href="#">
@@ -98,4 +95,20 @@ $(function () {
             }
         }
     })
+
+    var username = localStorage.getItem('username')
+    if (username) {
+        $('.login .login-register').html("<a href='#' class='login'>" + username + "</a><a href='#' id='logout' class='login'>Logout</a>")
+    }
+    $("#logout").click(function () {
+        localStorage.removeItem("username");
+        window.location.href = "index.html"
+    })
+
+    // $("#register").click(function () {
+    //     window.location.href = "./subpage/login.html"
+    //     $('register-btn').addClass("on").siblings().removeClass("on")
+    //     $('.account-info-box:nth-child(2)').addClass("on").siblings().removeClass("on")
+    // })
+
 })
