@@ -3,6 +3,7 @@ $(function () {
         $(this).addClass("on").siblings().removeClass("on")
     })
     waterflow()
+
     function waterflow() {
         var allChild = $(".card")
         var rowNo = 4
@@ -13,8 +14,6 @@ $(function () {
                 colHeight.push(
                     Math.round($(element).height())
                 )
-
-
             } else {
                 //putting the new img into lowest height row
                 var minHeihgtCol = Math.min.apply(null, colHeight)
