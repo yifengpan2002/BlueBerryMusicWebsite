@@ -46,17 +46,18 @@ $(function () {
     $("#music-play").on("click", function () {
         Music_On()
     })
+    $(".blog-content").html(decodeURI($(".blog-content")[0].innerText))
 
-    $.ajax(
-        {
-            type: "get",
-            url: "http://localhost/BlueBerry/BlueBerry_Server/music_blog_content.php",
-            success: function (data) {
-                data = JSON.parse(data)
-                $(".article-title h3").text(data.artical.artical_title)
-                $(".blog-content").html(decodeURI(data.artical.artical_cont))
+    // $.ajax(
+    //     {
+    //         type: "get",
+    //         url: "http://localhost/BlueBerry/BlueBerry_Server/music_blog_content.php",
+    //         success: function (data) {
+    //             data = JSON.parse(data)
+    //             $(".article-title h3").text(data.artical.artical_title)
+    //             $(".blog-content").html(decodeURI(data.artical.artical_cont))
 
-            }
-        }
-    )
+    //         }
+    //     }
+    // )
 })
